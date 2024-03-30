@@ -3,7 +3,7 @@
 # HACaseWizard
 > An AutoHotkey script to change case of selected text
 
-<!-- ### Download executable on [Releases](https://github.com/GhostShadow0316/HACaseWizard/releases) -->
+### Download executable on [Releases](https://github.com/GhostShadow0316/HACaseWizard/releases)
 
 ---
 
@@ -18,9 +18,9 @@
 
 1. Download and install [AutoHotkey](https://www.autohotkey.com/)
 1. Go to [Releases](https://github.com/GhostShadow0316/HACaseWizard/releases) to download the latest .ahk version
-1. Double click to run
+1. Double-click to run
 
-#### If want to run on startup
+#### Run on startup
 1) Press <kbd>win + r</kbd> and type `shell:startup` then press <kbd>Enter</kbd>
 1) Paste the file in the folder
 
