@@ -1,0 +1,6 @@
+# .gitignore
+
+.vscode/
+exe/
+test/
+desktop.ini
