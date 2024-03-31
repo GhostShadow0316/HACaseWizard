@@ -1,8 +1,5 @@
 ; HACaseWizard.ahk
 
-; A v2 re-write version of this script
-; https://github.com/GorvGoyl/Autohotkey-Scripts-Windows/blob/master/ctrl_caps_as_case_change.ahk
-
 #Requires AutoHotkey v2.0
 
 if (!A_IsAdmin) {
@@ -25,11 +22,13 @@ CMenu.Add("lowercase", CCase)
 CMenu.Add("UPPERCASE", CCase)
 CMenu.Add("Title Case", CCase)
 CMenu.Add("Sentence case", CCase)
+CMenu.Add("iNVERT cASE", CCase)
 CMenu.Add()
 CMenu.Add("rAnDom cAsE", CCase)
 CMenu.Add("iPhone cAse", CCase)
 CMenu.Add()
 CMenu.Add("Line breaks to spaces", CCase)
+CMenu.Add("Spaces to line breaks", CCase)
 CMenu.Add("Reverse", CCase)
 
 ^CapsLock:: {
@@ -55,8 +54,26 @@ CCase(name, pos, menu_) {
             text := StrTitle(text)
 
         case "Sentence case":
-            text := StrTitle(text)
+            text := StrLower(text)
             text := RegExReplace(text, "((?:^|[.!?]\s+)[a-z])", "$u1")
+
+            text := StrReplace(text, " i ", " I ")
+            text := StrReplace(text, " i'm ", " I'm ")
+            text := StrReplace(text, " i'll ", " I'll ")
+            text := StrReplace(text, " i've ", " I've ")
+
+        case "iNVERT cASE":
+            temp := ""
+            text := StrReplace(text, "`r`n", "`n")
+            Loop parse text {
+                if (!(isUpper(A_LoopField)) && !(isLower(A_LoopField))) {
+                    temp := temp . A_LoopField
+                }
+
+                temp := temp . (isUpper(A_LoopField) ? StrLower(A_LoopField) : "")
+                temp := temp . (isLower(A_LoopField) ? StrUpper(A_LoopField) : "")
+            }
+            text := StrReplace(temp, "`n", "`r`n")
 
         ; seporator
 
@@ -73,7 +90,6 @@ CCase(name, pos, menu_) {
             temp := ""
             text := StrReplace(text, "`r`n", "`n")
             Loop parse text, " " {
-                ; temp := temp . ()
                 first  := StrLower(SubStr(A_LoopField, 1, 1))
                 second := StrTitle(SubStr(A_LoopField, 2))
 
@@ -86,6 +102,9 @@ CCase(name, pos, menu_) {
 
         case "Line breaks to spaces":
             text := RegExReplace(text, "\R", " ")
+
+        case "Spaces to line breaks":
+            text := RegExReplace(text, " ", "`n")
 
         case "Reverse":
             temp := ""
