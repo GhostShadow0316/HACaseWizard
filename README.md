@@ -5,6 +5,8 @@
 
 ### Download executable on [Releases](https://github.com/GhostShadow0316/HACaseWizard/releases)
 
+### View [CHANGELOG](https://github.com/GhostShadow0316/HACaseWizard/blob/master/CHANGELOG.md) here
+
 ---
 
 ### Features
@@ -30,8 +32,11 @@
 1. Double-click to run
 
 #### Run on startup
-1) Press <kbd>win + r</kbd> and type `shell:startup` then press <kbd>Enter</kbd>
-1) Paste the file in the folder
+1. Press <kbd>win + r</kbd> and type `shell:startup` then press <kbd>Enter</kbd>
+
+   ![the run window](static/screenshots/run.png)
+
+2. Paste the file in the folder
 
 ---
 
@@ -41,20 +46,20 @@
 
 2. Select some text
 
-  ![abc](static/screenshots/step_1.png)
+  ![select text you want to apply changes](static/screenshots/step_1.png)
 
 3. Press <kbd>Ctrl + CapsLock</kbd> to show the menu
 
-  ![abc](static/screenshots/step_2.png)
+  ![show the menu](static/screenshots/step_2.png)
 
 4. Select the case you want either by mouse or arrow keys
 
-  ![abc](static/screenshots/step_3.png)
+  ![select an option](static/screenshots/step_3.png)
 
 5. Click or enter key to apply!
 
-  ![abc](static/screenshots/step_4.png)
+  ![apply change](static/screenshots/step_4.png)
 
 ---
 
-- latest update on 2024-03-31
+- latest update on 2024-04-01
