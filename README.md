@@ -21,22 +21,27 @@
 
 - `Line breaks to spaces`: Converts line breaks to spaces
 - `Spaces to line breaks`: Converts spaces to line breaks
+- `Lower Sequential Capital Letters`: lowercase the double capital letters (or triple or more!)
 - `Reverse`: Reverse the order of letter
 
 ---
 
-### Installation
+### Run the Script
 
-1. Download and install [AutoHotkey](https://www.autohotkey.com/)
-1. Go to [Releases](https://github.com/GhostShadow0316/HACaseWizard/releases) to download the latest .ahk version
-1. Double-click to run
+1. Go to [Releases](https://github.com/GhostShadow0316/HACaseWizard/releases) to download the latest .zip file
+1. Extract it and navigate into the folder
+1. Double-click the `.exe` file to run
 
 #### Run on startup
 1. Press <kbd>win + r</kbd> and type `shell:startup` then press <kbd>Enter</kbd>
 
    ![the run window](static/screenshots/run.png)
 
-2. Paste the file in the folder
+2. Paste the `.exe` file in the folder
+
+#### Run the `.ahk` file
+1. Download and install [AutoHotkey](https://www.autohotkey.com/)
+1. Double-click the `.ahk` file in the extracted folder to run
 
 ---
 
@@ -62,4 +67,19 @@
 
 ---
 
-- latest update on 2024-04-01
+### Extend the Functionality
+
+#### Create an Extension
+1. Go to `cases/extension/` folder and copy the `template.ahk` file
+1. Name it whatever you want
+1. Modify it with the instruction in it
+
+#### Create an Extension
+1. Go to `cases/extension/` folder and paste the extension file
+1. Open it and see the case_map area
+1. Open `config/config.ini` and add the extension cases into it
+1. set `custom_order = true`
+1. restart the script
+
+---
+- latest update on 2024-04-21

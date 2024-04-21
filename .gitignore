@@ -1,6 +1,7 @@
 # .gitignore
 
 .vscode/
-exe/
++exe/
 test/
 desktop.ini
+RELEASE.md

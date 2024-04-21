@@ -4,6 +4,27 @@
 
 ---
 
+## 0.4.0 - 2024/04/21
+
+### Change
+- Re-write change case system (CCase)
+  - split HACaseWizard to several files
+- Updated README.md
+- Now release a `.zip` file instead of download `.ahk` file or `.exe` file
+
+### Added
++ `Lower Sequential Capital Letters`: lowercase the double capital letters (or triple or more!)
+
+- configuration system
+  configurable:
+  - menu order
+  - use custom order or not
+- cases folder
+  - inside `/cases/built-in` has three files which is the old cases
+- RELEASE.md to draft what to write in releases description
+
+---
+
 ## 0.3.2 - 2024/04/01
 
 ### Change
