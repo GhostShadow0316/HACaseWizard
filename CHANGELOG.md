@@ -4,6 +4,14 @@
 
 ---
 
+## 0.4.1 - 2024/04/22
+
+### Fixed
+- README told user to paste the `.exe` file instead of the shortcut of it
+- as well as RELEASE.md
+
+---
+
 ## 0.4.0 - 2024/04/21
 
 ### Change

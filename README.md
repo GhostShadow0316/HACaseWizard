@@ -33,11 +33,12 @@
 1. Double-click the `.exe` file to run
 
 #### Run on startup
-1. Press <kbd>win + r</kbd> and type `shell:startup` then press <kbd>Enter</kbd>
+1. Right click the `.exe` file in the folder and choose copy
+2. Press <kbd>win + r</kbd> and type `shell:startup` then press <kbd>Enter</kbd>
 
    ![the run window](static/screenshots/run.png)
 
-2. Paste the `.exe` file in the folder
+3. Right click and choose `Paste shortcut`
 
 #### Run the `.ahk` file
 1. Download and install [AutoHotkey](https://www.autohotkey.com/)
